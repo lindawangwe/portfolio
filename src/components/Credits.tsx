@@ -7,8 +7,8 @@ const Credits = () => {
     <FadeInSection>
       <div id="credits">
         <div className="ending-credits">
-          <div>Built and designed by Linda. </div>
-          <div>All rights reserved. ©</div>
+          <div>Built with care by Linda.</div>
+          <div>© 2026 All rights reserved.</div>
         </div>
       </div>
     </FadeInSection>

@@ -62,41 +62,42 @@ const JobList: React.FC = () => {
       jobTitle: "Software Engineer @",
       duration: "MAR 2026 - PRESENT",
       desc: [
-        "Designed, developed, and maintained the company's digital platform supporting travel consultation, study-abroad, work-abroad, visa advisory, relocation, and business travel services",
-        "Built responsive user interfaces, developed backend APIs, managed databases, optimized website performance, and implemented content management solutions",
-        "Increased consultation inquiries by 25%. Reduced page load time by 40%. Automated 80% of inquiry routing",
+        "Built and maintained a digital platform for travel consultation, study-abroad, work-abroad, visa advisory, relocation, and business travel services.",
+        "Created responsive landing pages and CRM dashboards for bookings, inquiries, and automated workflows.",
+        "Developed frontend interfaces, backend APIs, and data workflows to improve usability, performance, and reliability.",
+        "Increased consultation inquiries by 25%, reduced page load time by 40%, and automated 80% of inquiry routing.",
       ],
     },
     ChinaSquare: {
       jobTitle: "IT Support, Data Management & Customer Operations @",
       duration: "MAR 2024 - FEB 2026",
       desc: [
-        "Supported retail operations through a combination of technical assistance, data management, and customer support.",
-        "Maintained business records, resolved basic hardware and software issues, assisted users with system-related challenges, and ensured data accuracy across operational workflows.",
-        "Developed strong problem-solving, communication, and analytical skills while working with digital systems in a high-volume environment."
+        "Delivered technical support and data management for retail operations, ensuring accurate records and smooth day-to-day workflows.",
+        "Resolved software and hardware issues, supported end users, and maintained operational systems in a high-volume environment.",
+        "Strengthened problem-solving, communication, and analytical skills while supporting customer-facing business operations."
       ],
     },
     XgamerTechnologies: {
       jobTitle: "Web Developer & Technical Support Specialist @",
       duration: "JAN 2023 - MAR 2024",
       desc: [
-        "Developed and maintained web applications and website features to support business operations and customer engagement. Built responsive user interfaces, implemented new functionality, and maintained digital content across web platforms.",
-        "In addition to software development responsibilities, assembled and customized gaming PCs based on customer requirements, performed hardware upgrades, diagnosed and resolved minor technical issues, and provided technical support related to computer systems and peripherals.",
-        "Collaborated with customers and team members to deliver tailored technology solutions and improve overall user experience."
+        "Developed and maintained responsive web applications and marketing pages to support customer engagement and business operations.",
+        "Built and customized gaming PCs, performed upgrades, diagnosed issues, and provided technical support for hardware and peripherals.",
+        "Worked closely with customers and teams to deliver tailored technology solutions and improve the overall user experience."
       ],
     },
     Turing: {
-      jobTitle: "Junior Software Engineer  @",
+      jobTitle: "Junior Software Engineer @",
       duration: "SEP 2021 - DEC 2022",
       desc: [
-        "Developed  responsive React web pages  from scratch, both on client and server side.",
-        "Iteratively built web experiences for users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
+        "Built responsive React interfaces from the ground up for client and server-rendered web experiences.",
+        "Created user-facing features across high-traffic pages, with a focus on clean implementation and maintainability.",
+        "Collaborated with senior engineers and product teams throughout the full software development lifecycle.",
       ],
     },
   };
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 

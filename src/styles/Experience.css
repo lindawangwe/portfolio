@@ -4,6 +4,10 @@
   max-width: 1000px;
 }
 
+.MuiBox-root {
+  border-radius: 16px;
+}
+
 .joblist-job-title {
   font-family: "NTR", sans-serif;
   font-size: 28px;

@@ -27,8 +27,9 @@ const Intro = () => {
         </div>
         <FadeInSection>
           <div className="intro-desc">
-           Am a fullstack  Software engineer. I build fast, scalable and responsive applications/ products.
-           I enjoy turning ideas into real products that solve problems.
+            I&apos;m a full-stack software engineer building fast, scalable, and
+            user-focused digital products. I turn ideas into practical
+            experiences that solve real problems.
           </div>
           <a href="mailto:lindawan920@gmail.com" className="intro-contact">
             <EmailRoundedIcon />

@@ -1,21 +1,24 @@
 
 import "../styles/About.css";
+import profileImage from "../assets/me2.png";
 import FadeInSection from "./FadeInSection";
 
 const About = () => {
   const one = (
     <p>
-      I am currently a <b>Software Engineer</b> at
-      <a href="https://www.moslinetravel.com/"> Mosline</a>, where I help build
-      and maintain digital platform that supports the company.{" "}
-      <a href="https://www.chinamall.co.ke/"> China Square</a> and{" "}
-      <a href="https://xgamertechnologies.com/"> Xgamer Technologies.</a>
+      I am currently a <b>Software Engineer</b> at{" "}
+      <a href="https://www.moslinetravel.com/">Mosline</a>, where I design and
+      maintain digital experiences that support business operations and customer
+      engagement across the company, alongside work with{" "}
+      <a href="https://www.chinamall.co.ke/">China Square</a> and{" "}
+      <a href="https://xgamertechnologies.com/">Xgamer Technologies</a>.
     </p>
   );
   const two = (
     <p>
-      In my free time, I enjoy exploring new technologies, building personal projects, and contributing to open-source software.
-      i also enjoy photography and creating content.
+      Outside of work, I enjoy exploring new technologies, building personal
+      projects, and creating content around design, software, and digital
+      experiences.
     </p>
   );
 
@@ -29,6 +32,17 @@ const About = () => {
     "REST APIs",
     "PostgreSQL",
     "Prisma ORM",
+    "Node.js",
+    "supabase",
+    "Tailwind CSS",
+    "Material UI",
+    "Git & GitHub",
+    "Docker",
+    "AWS",
+    "Linux",
+    "Firebase",
+    "Figma",
+    "MongoDB",
   ];
 
   return (
@@ -51,7 +65,7 @@ const About = () => {
             {two}
           </div>
           <div className="about-image">
-            <img alt="Linda" src={"/assets/me2.jpg"} />
+            <img alt="Linda" src={profileImage} />
           </div>
         </div>
       </FadeInSection>

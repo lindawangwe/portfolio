@@ -1,10 +1,11 @@
 .navbar {
-    background-color: var(--navy) !important;
+    background-color: rgba(10, 25, 47, 0.88) !important;
     color: var(--lightest-slate) !important;
     font-family: 'NTR';
     font-weight: bold;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--lightest-navy);
+    border-bottom: 1px solid rgba(100, 255, 218, 0.08);
+    box-shadow: 0 10px 30px rgba(2, 12, 27, 0.12);
   }
 
   .navbar-brand {
@@ -17,6 +18,7 @@
 
   .nav-link {
     color: var(--lightest-slate) !important;
+    letter-spacing: 0.02em;
     transition: color 0.2s ease;
   }
 

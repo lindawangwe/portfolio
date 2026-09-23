@@ -30,7 +30,9 @@
 
 .App {
   font-family: "NTR";
-  background-color: var(--navy);
+  background:
+    radial-gradient(circle at top, rgba(100, 255, 218, 0.08), transparent 35%),
+    var(--navy);
   color: var(--lightest-slate);
   display: flex;
   flex-direction: column;
@@ -55,6 +57,10 @@ a:hover {
 
 #content {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .rs-steps-horizontal .rs-steps-item-content {
@@ -80,8 +86,9 @@ a:hover {
 
 .section-header {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   width: 100%;
+  margin-bottom: 8px;
 }
 
 .section-header::after {

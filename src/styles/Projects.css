@@ -7,7 +7,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 14px;
 }
 @media (max-width: 1080px) {
   .projects-grid {
@@ -20,18 +20,19 @@
   cursor: default;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  position: relative;
   height: 100%;
   padding: 2rem 1.75rem;
-  background-color: var(--light-navy);
-  border-radius: 16px;
+  background: rgba(17, 34, 64, 0.9);
+  border: 1px solid rgba(100, 255, 218, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(2, 12, 27, 0.18);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .projects-card:hover {
   transform: translateY(-7px);
-  background-color: var(--lightest-navy);
+  background-color: rgba(35, 53, 84, 0.9);
+  border-color: rgba(100, 255, 218, 0.28);
 }
 
 .project-card-link {
@@ -110,14 +111,15 @@
   color: var(--lightest-slate);
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 12px;
 }
-
 
 .card-desc {
   font-family: "NTR", sans-serif;
   color: var(--slate);
   font-size: 18px;
-  padding-bottom: 40px;
+  line-height: 1.6;
+  padding-bottom: 20px;
 }
 
 .project-badge {
@@ -141,12 +143,14 @@
 
 .card-tech {
   font-family: "NTR", sans-serif;
-  color: var(--slate);
-  font-size: 16px;
+  color: var(--green-bright);
+  font-size: 15px;
+  letter-spacing: 0.02em;
 }
 
 .spotlight-projects-desktop {
   width: 100%;
+  margin-bottom: 18px;
 }
 
 .spotlight-projects-mobile {
@@ -163,7 +167,9 @@
 .carousel-inner {
   height: 500px;
   border-radius: 24px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  overflow: hidden;
+  border: 1px solid rgba(100, 255, 218, 0.12);
+  box-shadow: 0 20px 40px rgba(2, 12, 27, 0.28);
 }
 
 .carousel-inner:hover {
@@ -171,16 +177,24 @@
 }
 
 .carousel img {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
-  opacity: 0.5;
+  width: 100%;
+  opacity: 0.7;
+  filter: saturate(0.9) contrast(1.05);
 }
 
 .carousel-caption {
   font-family: "NTR", sans-serif;
-  max-width: 500px;
+  max-width: 520px;
   right: unset !important;
-  left: 25% !important;
+  left: 8% !important;
+  bottom: 8% !important;
+  padding: 1.5rem 1.25rem;
+  background: rgba(2, 12, 27, 0.52);
+  border: 1px solid rgba(100, 255, 218, 0.12);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
   user-select: none;
 }
 
@@ -188,6 +202,7 @@
   font-size: 38px;
   font-weight: bold;
   color: var(--lightest-slate);
+  margin-bottom: 12px;
 }
 
 .carousel-caption p {
@@ -202,6 +217,10 @@
   font-size: 14px;
   font-weight: bold;
   color: var(--green-bright);
+}
+
+.carousel-indicators {
+  bottom: 18px;
 }
 
 .carousel-indicators .active {
@@ -225,12 +244,14 @@
     margin: 10px 0 20px;
     border-radius: 12px;
     overflow: hidden;
+    border: 1px solid rgba(100, 255, 218, 0.12);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   .spotlight-mobile-image img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
     display: block;
   }
 

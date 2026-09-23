@@ -4,6 +4,10 @@ import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
 import FadeInSection from "./FadeInSection";
 import { Carousel } from "react-bootstrap";
 import ExternalLinks from "./ExternalLinks";
+import mamaUncleImage from "../assets/mamauncle.png";
+import veiImage from "../assets/vei.png";
+import businessConsultantImage from "../assets/businesscons.png";
+import portfolioImage from "../assets/prompttile.png";
 
 interface SpotlightProject {
   title: string;
@@ -15,6 +19,7 @@ interface SpotlightProject {
 }
 
 interface Project {
+  title: string;
   desc: string;
   techStack: string;
   link: string;
@@ -23,55 +28,58 @@ interface Project {
 
 const spotlightProjects: Record<string, SpotlightProject> = {
   Stores: {
-    title: "mama uncle stores",
-    desc: "A fullstack e-commerce application that allows users to browse and purchase products from a variety of products",
+    title: "Mama Uncle Stores",
+    desc: "A full-stack e-commerce platform for browsing and purchasing products in a clean, conversion-focused shopping experience.",
     techStack: "MERN Stack",
     link: "https://github.com/lindawangwe/mama-uncle-stores",
-    image: "/assets/blob.png",
+    open: "https://mama-uncle-stores.vercel.app/",
+    image: mamaUncleImage,
   },
-  "vei": {
-    title: "vei-platform",
-    desc: "A full digital ecosystem built combining a corporate website, authenticated user platform, media, business networking, academy, events, and international opportunities into one scalable web application",
+  vei: {
+    title: "VEI Platform",
+    desc: "A digital ecosystem combining corporate marketing, user authentication, media, networking, learning, events, and opportunity discovery in one platform.",
     techStack: "Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Supabase, Auth.js",
     link: "https://github.com/lindawangwe/vei-platform",
-    image: "/assets/nomansland.png",
+    image: veiImage,
   },
-  "consultant": {
+  consultant: {
     title: "Business Consultant",
-    desc: "Built a responsive business consulting platform using modern web technologies, with an emphasis on performance, scalability, SEO, and user engagement.",
+    desc: "A responsive consulting website focused on clear messaging, SEO, performance, and user engagement for a modern service brand.",
     techStack: "React.js, Bootstrap, Node.js, Express.js, MongoDB",
     link: "https://github.com/lindawangwe/business-consultant",
-    open: "https://talltales.herokuapp.com/",
-    image: "/assets/talltales.png",
+    open: "https://business-consultant-six.vercel.app/",
+    image: businessConsultantImage,
   },
-  Portfolio: {
-    title: "portfolio.js",
-    desc: "A small JS library that helps with clear and succinct data presentation.",
-    techStack: "NODE.JS (EXPRESS.JS)",
+  Prompttile: {
+    title: "Prompttile",
+    desc: "An AI-powered platform for generating, organizing, and managing prompts in a streamlined creative workflow.",
+    techStack: "Next.js, TypeScript, Full-stack",
     link: "https://github.com/lindawangwe/my-portfolio",
-    open: "https://afternoon-ocean-92382.herokuapp.com/",
-    image: "/assets/portfolio.png",
+    open: "https://next-js-prompttile.vercel.app/",
+    image: portfolioImage,
   },
 };
 
 const projects: Record<string, Project> = {
   "mama-uncle-stores": {
-    desc: "A fullstack e-commerce application that allows users to browse and purchase products from a variety of products.",
+    title: "Mama Uncle Stores",
+    desc: "A full-stack e-commerce app designed for browsing products and delivering a smooth online shopping experience.",
     techStack: "MERN Stack",
     link: "https://github.com/lindawangwe/mama-uncle-stores",
-    open: "https://mama-uncle-stores.herokuapp.com/",
+    open: "https://mama-uncle-stores.vercel.app/",
   },
   "vei-platform": {
-    desc: "A full digital ecosystem built combining a corporate website, authenticated user platform, media, business networking, academy, events, and international opportunities into one scalable web application",
+    title: "VEI Platform",
+    desc: "A scalable digital ecosystem unifying brand presence, community tools, learning experiences, and business opportunities in one product.",
     techStack: "Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Supabase, Auth.js",
     link: "https://github.com/lindawangwe/vei-platform",
-  
   },
   "business-consultant": {
-    desc: "Built a responsive business consulting platform using modern web technologies, with an emphasis on performance, scalability, SEO, and user engagement.",
+    title: "Business Consultant",
+    desc: "A responsive business website built to improve visibility, engagement, and conversion through strong UX and clean front-end architecture.",
     techStack: "React.js, Bootstrap, Node.js, Express.js, MongoDB",
     link: "https://github.com/lindawangwe/business-consultant",
-    open: "https://talltales.herokuapp.com/",
+    open: "https://business-consultant-six.vercel.app/",
   },
 };
 
@@ -181,7 +189,7 @@ const Projects: React.FC = () => {
                   />
                 </div>
 
-                <div className="card-title">{key}</div>
+                <div className="card-title">{projects[key].title}</div>
                 <div className="card-desc">{projects[key].desc}</div>
                 <div className="card-tech">{projects[key].techStack}</div>
               </li>
