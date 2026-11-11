@@ -6,10 +6,10 @@ import FadeInSection from "./FadeInSection";
 const About = () => {
   const one = (
     <p>
-      I am currently a <b>Software Engineer</b> at{" "}
-      <a href="https://www.moslinetravel.com/">Mosline</a>, where I design and
+      I am currently a <b>Software Engineer/Graphic Designer </b> at{" "}
+      <a href="https://www.moslinetravel.com/">Mosline</a>, where I created and launched the website and
       maintain digital experiences that support business operations and customer
-      engagement across the company, alongside work with{" "}
+      engagement across the company and creation of graphic design i.e posters,flyers,bronchure, previously worked with{" "}
       <a href="https://www.chinamall.co.ke/">China Square</a> and{" "}
       <a href="https://xgamertechnologies.com/">Xgamer Technologies</a>.
     </p>
@@ -43,6 +43,9 @@ const About = () => {
     "Firebase",
     "Figma",
     "MongoDB",
+    "Canva",
+    "Figma",
+    "Adobe illustrator "
   ];
 
   return (

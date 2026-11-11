@@ -62,7 +62,8 @@ const JobList: React.FC = () => {
       jobTitle: "Software Engineer @",
       duration: "MAR 2026 - PRESENT",
       desc: [
-        "Built and maintained a digital platform for travel consultation, study-abroad, work-abroad, visa advisory, relocation, and business travel services.",
+        "Built, launched and maintained the website and digital platform for travel consultation, study-abroad, work-abroad, visa advisory, relocation, and business travel services.",
+        "Created graphic designs in all social media sizes that is posters,flyers, videos and bronchures using canva,figma and adobe illustrator ",
         "Created responsive landing pages and CRM dashboards for bookings, inquiries, and automated workflows.",
         "Developed frontend interfaces, backend APIs, and data workflows to improve usability, performance, and reliability.",
         "Increased consultation inquiries by 25%, reduced page load time by 40%, and automated 80% of inquiry routing.",
